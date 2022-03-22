@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
+        integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+    <!----===== Boxicons CSS ===== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta2/dist/css/bootstrap-select.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>FourceEX</title>
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+
+
+    <nav class="sidebar close">
+
+        <header>
+            <div class="image-text">
+
+
+                <div class="text logo-text">
+                    <span class="name">Olá, USUÁRIO.
+                    </span>
+                    <span class="profession">Minha Conta 00000000-0 <img src="./img/verified.png"></span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class='bx bx-home-alt bx-tada-hover icon'></i>
+                            <span class="text nav-text">HOME</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet bx-tada-hover icon'></i>
+                            <span class="text nav-text">SALDO</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-detail bx-tada-hover icon'></i>
+                            <span class="text nav-text">EXTRATO</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-user bx-tada-hover icon'></i>
+                            <span class="text nav-text">PERFIL</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="compravenda.html">
+                            <i class='bx bx-store bx-tada-hover icon'></i>
+                            <span class="text nav-text" style=" font-size: 15.5px !important;">Comprar e vender</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="servicos.html">
+                            <i class='bx bx-package bx-tada-hover icon'></i>
+                            <span class="text nav-text">Serviços</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out bx-fade-left-hover icon'></i>
+                        <span class="text nav-text">Sair</span>
+                    </a>
+                </li>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+    <section class="home">
+
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+
+
+            <nav class="navbar navbar-dark bg-dark navFource">
+                <div class="container-fluid">
+                    <img src="./img/logo-fource-sem-fundo (1).png" width="20%" style="margin: 10px !important;">
+                </div>
+            </nav>
+
+            <div class="containter-md-12">
+                <div class="row">
+                    <div class="cardMoeda">
+                        <div class="additional">
+                            <div class="user-card">
+                                <div class="level center">
+                                    Saldo:
+                                    R$ 600,000.00
+                                </div>
+                                <div class="points center">
+                                    30.00 BTC
+                                </div>
+                                <img width="90" height="90" src="./img/bitcoinbw.png" class="center">
+
+                                </img>
+                            </div>
+                            <div class="more-info">
+                                <h1>Bitcoin</h1>
+                                <div class="coords">
+                                    <span>Valorização</span>
+                                    <span>3.61%</span>
+                                </div>
+                                <div class="coords">
+                                    <span>Capitalização</span>
+                                    <span>R$3,900,284,302,436
+                                    </span>
+                                </div>
+                                <div class="coords">
+                                    <span>Preço</span>
+                                    <span>R$205,438.29
+                                    </span>
+                                </div>
+                                <div class="stats">
+                                    <div>
+                                        <div class="title">Em alta</div>
+                                        <i class='bx bx-trending-up'></i>
+                                        <div class="value">3.61%</div>
+                                    </div>
+                                    <div>
+                                        <div class="title">Volátilidade</div>
+                                        <i class='bx bxs-hot'></i>
+                                        <div class="value">39.75</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="general">
+                            <h1>Bitcoin</h1>
+                            <p style="font-size: 12px;">O Bitcoin surgiu em 2008 como uma resposta à crise financeira,
+                                com a ideia de substituir
+                                o dinheiro físico que usamos e, principalmente, tirar a necessidade de intermediação dos
+                                bancos nas operações financeiras.</p>
+                            <span class="more">+ Detalhes</span>
+                        </div>
+                    </div>
+
+                    <div class="cardMoeda green">
+                        <div class="additional">
+                            <div class="user-card">
+                                <div class="level center">
+                                    Saldo:
+                                    R$0,00
+                                </div>
+                                <div class="points center">
+                                    0.00 ETH
+                                </div>
+                                <img width="90" height="90" src="./img/ethereumbw.png" class="center">
+
+                                </svg>
+                            </div>
+                            <div class="more-info">
+                                <h1>Ethereum</h1>
+                                <div class="coords">
+                                    <span>Valorização</span>
+                                    <span>0.00%</span>
+                                </div>
+                                <div class="coords">
+                                    <span>Capitalização</span>
+                                    <span>R$3,900,284,302,436
+                                    </span>
+                                </div>
+                                <div class="coords">
+                                    <span>Preço</span>
+                                    <span>R$205,438.29
+                                    </span>
+                                </div>
+                                <div class="stats">
+                                    <div>
+                                        <div class="title">Em baixa</div>
+                                        <i class='bx bx-trending-down'></i>
+                                        <div class="value">0.00%</div>
+                                    </div>
+                                    <div>
+                                        <div class="title">Volátilidade</div>
+                                        <i class='bx bxs-bed'></i>
+                                        <div class="value">1.75</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="general">
+                            <h1>Ethereum</h1>
+                            <p style="font-size:12px">O Ethereum é o resultado de uma divisão (“hard fork”) de sua rede
+                                ocorrida em 2016 após
+                                um hacker encontrar uma falha e roubar cerca de US$ 50 milhões de Ether (a moeda da rede
+                                Ethereum).</p>
+                            <span class="more">+ Detalhes</span>
+                        </div>
+                    </div>
+                    <div class="cardMoeda">
+                        <div class="additional">
+                            <div class="user-card">
+                                <div class="level center">
+                                    Saldo:
+                                    R$ 600,000.00
+                                </div>
+                                <div class="points center">
+                                    30.00 BTC
+                                </div>
+                                <img width="90" height="90" src="./img/bitcoinbw.png" class="center">
+
+                                </img>
+                            </div>
+                            <div class="more-info">
+                                <h1>Bitfource</h1>
+                                <div class="coords">
+                                    <span>Valorização</span>
+                                    <span>3.61%</span>
+                                </div>
+                                <div class="coords">
+                                    <span>Capitalização</span>
+                                    <span>R$3,900,284,302,436
+                                    </span>
+                                </div>
+                                <div class="coords">
+                                    <span>Preço</span>
+                                    <span>R$205,438.29
+                                    </span>
+                                </div>
+                                <div class="stats">
+                                    <div>
+                                        <div class="title">Em alta</div>
+                                        <i class='bx bx-trending-up'></i>
+                                        <div class="value">3.61%</div>
+                                    </div>
+                                    <div>
+                                        <div class="title">Volátilidade</div>
+                                        <i class='bx bxs-hot'></i>
+                                        <div class="value">39.75</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="general">
+                            <h1>Bitfource</h1>
+                            <p>Lorem ipsum.</p>
+                            <span class="more">+ Detalhes</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-12">
+                <div class="text">BITFOURCE</div>
+                <div class="progress" style="margin: 30px !important; height: 25px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+                        aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"
+                        style="width: 0%; background-color: #8F282B !important;"></div>
+                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 0%; background-color: #f75151 !important;" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 60%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 0%; background-color: #7EC384 !important" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 0%; background-color: #3F7856 !important;" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <ul class="legenda">
+                    <li class="legend"><i class='bx bxs-rectangle' style='color:#8f282b'></i> VENDA FORTE</li>
+                    <li class="legend"><i class='bx bxs-rectangle' style='color:#f75151'></i> VENDA</li>
+                    <li class="legend"><i class='bx bxs-rectangle' style='color:#ffc107'></i> AGUARDE</li>
+                    <li class="legend"><i class='bx bxs-rectangle' style='color:#7EC384'></i> COMPRA</li>
+                    <li class="legend"><i class='bx bxs-rectangle' style='color:#3F7856'></i> COMPRA FORTE</li>
+                </ul>
+            </div>
+
+            <div class="container"
+                style="margin-left: 50px !important; padding-top: 50px !important; padding-bottom: 50px !important;">
+                <canvas id="myChart"></canvas>
+            </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <script>
+
+        const labels = [
+            'Janeiro',
+            'Fevereiro',
+            'Março',
+            'Abril',
+            'Maio',
+            'Junho',
+        ];
+
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: 'Bitfource',
+                backgroundColor: '#ffb818',
+                borderColor: '#ffb818',
+                data: [0, 10, 5, 2, 20, 30, 45],
+            }]
+        };
+
+        const config = {
+            type: 'line',
+            data: data,
+            options: {}
+        };
+
+
+
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+    </script>
+
+
+
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/react-popper/dist/index.umd.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta2/dist/css/bootstrap-select.min.css">
+
+</body>
+
+</html>
